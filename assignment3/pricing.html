@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=Maitree&family=Montserrat&family=Mukta+Vaani:wght@300;400&family=Quicksand&display=swap&family=Secular+One&display=swap"
+        rel="stylesheet">
+
+    <title>Price Page</title>
+    <style>
+    * {
+        font-family: 'Quicksand', sans-serif;
+
+
+    }
+
+
+    body {
+
+        background-color: #F5F8FA;
+    }
+
+
+    .pricebody {
+        margin: 100px;
+        display: flex;
+    }
+
+    .pricing {
+        display: flex;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .checkout {
+        flex: 70%;
+        background-color: #FFFFFF;
+    }
+
+
+    .blue {
+        flex: 30%;
+        background-color: #1179BF;
+    }
+
+    .cardinfo {
+        background-color: #EDEFF2;
+        color: #A8AEB6;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+
+        align-items: center;
+
+    }
+
+    .cvc {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+    }
+
+    .inside1 {
+        margin: 20px;
+    }
+
+
+    .inside2 {
+        margin: 20px;
+
+    }
+
+    label {
+        margin-bottom: 15px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 73px;
+        background-color: #F5F8FA;
+
+        /* z-index: 9999; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    #navbar img {
+        height: 39px;
+        width: auto;
+        vertical-align: middle;
+    }
+
+    #navbar .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 476px;
+        height: 40px;
+    }
+
+    #navbar a {
+        color: #1D2C3C;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .bordered {
+        border: 3px solid #646E7A;
+        border-radius: 5px;
+        padding: 6px;
+    }
+
+
+
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: rgb(216, 219, 223);
+
+        margin: 20px 0;
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="navbar" id="navbar">
+        <div style="margin-left:15px">
+            <img src="wplogo.png" alt="">
+        </div>
+
+        <div class="menu" style="margin-right:15px">
+            <a class="nav-name" href="#">Download</a>
+            <a class="nav-name" href="#">Learn More</a>
+            <a class="nav-name" href="#">Pricing</a>
+            <a class="nav-name" href="#">Help</a>
+            <div class="bordered">
+                <a class="nav-name" href="#">Account</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+
+    <div class="pricebody" style="display:flex; justify-content:center; margin-bottom:10px">
+
+        <hr>
+
+        <div class="pricing" style="width:892px; height:795px">
+
+            <div class="checkout">
+
+                <div style="width:580px; height:80px; margin-top:30px; padding-left:30px">
+                    <div style="width:161px; height:54px">
+                        <img src="checkout.png" alt="">
+                    </div>
+
+                </div>
+                <br>
+                <div style="color:grey; width:100%; height:1px">
+                    <br>
+
+                </div>
+                <div class="basic" style="width:580px; height:221px; padding-left: 30px; padding-right:30px;">
+                    <div style="width:286px; height:34px">
+                        <img src="basic.png" alt="">
+                    </div>
+                    <br>
+                    <div class="names" style="display:flex; justify-content:space-between;">
+                        <div style="width:227px; height:60px">
+                            <label for="firstname">First Name</label>
+                            <br>
+                            <div class="cardinfo" style="width:227px; height:36px">
+                                <div style="width:187px; height:17px">
+                                    <span>Jane</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div style="width:227px; height:60px; padding-right:35px">
+                            <label for="lastname">Last Name</label>
+                            <br>
+
+                            <div class="cardinfo" style="width:227px; height:36px">
+                                <div style="width:187px; height:17px">
+                                    <span>Doe</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+
+
+                    <div class="email">
+
+                        <label for="email">E-mail</label>
+                        <div class="cardinfo" style="width:370px; height:36px">
+                            <div style="width:187px; height:17px">
+                                <span>janedoe@example.com</apan>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+                <hr>
+                <br>
+
+                <div class="payinfo" style="width:580px; height:154px; padding-left: 30px; padding-right:30px;">
+                    <div style="width:286px; height:30px">
+
+                        <img src="pay.png" alt="">
+                    </div>
+                    <br>
+                    <div class="payment">
+                        <label for="pay">Credit Card</label>
+                        <div class="cardinfo" style="height:36px; width:483px">
+                            <div style="width:154px; height:17px">
+                                <span>Card Number</span>
+                            </div>
+
+
+                            <div class="cvc">
+
+                                <div style="width:154px; height:17px">
+                                    <span>MM/YY</span>
+                                </div>
+
+                                <div style="width:36px; height:17px">
+                                    <span>CVC</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+
+                <div
+                    style="width:520px; height:146.1px; display:flex; justify-content:center; margin-left:30px; border:#038E7D">
+
+                    <div
+                        style="width:520px; height:146.1px; display:flex; justify-content:center; flex-direction:column; align-items:center; border:#038E7D">
+
+                        <button
+                            style="width:520px; height:52px; background-color: #038E7D; color:white; border-radius:6px; border:#038E7D"><strong>Buy
+                                WP
+                                Pusher</strong></button>
+
+                        <!-- Help text -->
+                        <div style="margin-top:10px; width:333px; height:20px;">
+                            <img src="support.png" alt="">
+                        </div>
+
+                        <!-- Stripe image -->
+                        <div style="margin-top:10px; width:92px; height:20.1px;">
+                            <img src="stripe.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="blue">
+                <div class="inside2" style="width:231px; height:610px; margin-top:30px; margin-left: 30px">
+
+                    <div style="width: 231px; height:152px;">
+                        <img src="freelance.png" alt="">
+                    </div>
+
+                    <br>
+
+                    <div style="width: 170px; height:96px;">
+                        <img src="list.png" alt="">
+                    </div>
+
+                    <br>
+
+                    <div style="width: 184px; height:51px;">
+                        <img src="agency.png" alt="">
+                    </div>
+
+
+                    <br>
+
+                    <div style="width: 229px; height:196px;">
+                        <img src="comment.png" alt="">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <div style="width: 100%; height:10px; display:flex; justify-content:center">
+        <img src="footer.png" alt="">
+    </div>
+
+    <div style="height:30px"></div>
+
+
+</body>
+
+</html>
