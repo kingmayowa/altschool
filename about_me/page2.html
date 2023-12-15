@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select {
+        width: 280px;
+        height: 50px;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid rgb(216, 219, 223);
+
+        border-radius: 6px;
+        color: #555;
+        transition: border-color 0.3s ease;
+    }
+
+    label {
+        width: 270px;
+        text-align: left;
+    }
+
+    .form-row div {
+        margin-right: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #6A6FF5;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    input::placeholder,
+    select::placeholder {
+        color: #AEA6A6;
+        font-weight: bold;
+    }
+
+    input:focus,
+    select:focus {
+        border-color: #6A6FF5;
+        outline: none;
+    }
+
+    select::after {
+        content: "\25BC";
+        font-size: 16px;
+        color: #555;
+        margin-right: 15px;
+    }
+
+    div.style-center {
+        text-align: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    /* Responsive layout for desktop screens */
+    @media (min-width: 768px) {
+        body {
+            display: flex;
+            overflow: auto;
+        }
+
+        .purple-box {
+
+            position: relative;
+            width: 50vw;
+            height: 100vh;
+            background-color: #FFF6EE;
+
+            overflow: hidden;
+        }
+
+
+        img {
+            display: block;
+            position: absolute;
+            max-width: 50%;
+            max-height: 50%;
+        }
+
+        .top-left {
+            top: 8px;
+            left: 8px;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+
+
+
+        form {
+            width: 50vw;
+            overflow-y: auto;
+        }
+    }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="purple-box">
+
+        <!-- Top left image -->
+        <img class="top-left" src="altlogo.png" alt="Top Left Image">
+        <!-- Top right image -->
+        <img class="top-right" src="svgtr.png" alt="Top Right Image">
+        <!-- Bottom left image -->
+        <img class="bottom-left" src="svgbr.png" alt="Bottom Left Image">
+
+
+    </div>
+
+    <form style="padding:15px; margin:10px; margin-top:5px">
+
+        <a href="page1.php" style="text-decoration:none; color:darkgray; ">&#8592; Back</a>
+        <h4>Application Form</h4>
+        <span>Fill in your details</span>
+        <br>
+        <br>
+        <!-- Row 1 -->
+        <div class="form-row">
+            <div>
+                <label for="field1">First Name<span style="color:red">*</span></label>
+                <input type="text" id="field1" name="field1" value="Mayowa" required>
+            </div>
+
+            <div>
+                <label for="field2">Last Name<span style="color:red">*</span></label>
+                <input type="text" id="field2" name="field2" value="Adeyemi" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="field3">Gender<span style="color:red">*</span></label>
+                <select name="field3" id="">
+                    <option value="">Male</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="field4">Date of Birth<span style="color:red">*</span></label>
+                <input type="date" id="field4" name="field4" value="1993-05-30" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="field5">Email Address<span style="color:red">*</span></label>
+                <input type="text" id="field5" name="field5" value="adeyemimayowakayode@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="field6">Education Level<span style="color:red">*</span></label>
+                <select name="field6" id="">
+                    <option value="">Msc</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="field7">Country<span style="color:red">*</span></label>
+
+                <select name="field7" id="">
+                    <option value="">Nigeria</option>
+
+
+                </select>
+            </div>
+
+            <div>
+                <label for="field8">State/City of Residence<span style="color:red">*</span></label>
+                <input type="text" id="field8" name="field8" value="Ogun State" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="field9">Employment Status<span style="color:red">*</span></label>
+
+                <select name="field9" id="">
+                    <option value="">Employed</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="field15">Phone Number<span style="color:red">*</span></label>
+
+                <input type="text" id="field15" name="field15" value="08066000385" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="field9">Choose School<span style="color:red">*</span></label>
+
+                <select name="field9" id="">
+                    <option value="">School of Engineering</option>
+                   
+
+                </select>
+            </div>
+
+            <div>
+                <label for="field10">Choose Course of Study<span style="color:red">*</span></label>
+
+                <select name="field10" id="">
+                    <option value="">Physics</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="field11">How did you hear about us?</label>
+
+                <select name="field11" id="">
+                    <option value="">Other</option>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="field12">Scholarship/Discount Code (optional)</label>
+                <input type="text" id="field12" name="field12" placeholder="Scholarship or student ID or discount codes"
+                    required>
+            </div>
+        </div>
+
+
+        <br>
+        <div>
+            <span>By clicking continue, I agree to <span style="color:blue">Terms of Use</span> and acknowledge
+                that I
+                have read the <span style="color:blue">Privacy Policy.</span></span>
+        </div>
+
+        <br>
+        <div style="display: flex; justify-content: center;">
+            <button style="width:70%; height:100%; background-color: #6A6FF5; color:white">Proceed</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
